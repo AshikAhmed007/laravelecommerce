@@ -1,0 +1,34 @@
+<?php
+
+namespace App\Http\Controllers;
+
+class WelcomeHome extends Controller {
+	public function index() {
+		return view('frontEnd.home.homecontent');
+	}
+
+	public function mencategory() {
+
+		return view('frontEnd.category.mensWear');
+
+	}
+	public function womencategory() {
+
+		return view('frontEnd.category.womensWear');
+
+	}
+	public function electrocategory() {
+
+		return view('frontEnd.category.electronics');
+
+	}
+	public function contact() {
+
+		return view('frontEnd.contact.contactUs');
+
+	}
+	public function productDetails() {
+		return view('frontEnd.productDetails.prodectdetails');
+
+	}
+}
